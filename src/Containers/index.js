@@ -42,7 +42,8 @@ export default function App () {
             style={{ marginBottom: '20px' }}>
             New Todo
           </button>
-          <TodoList itemsList={state}/>
+
+          {state && <TodoList itemsList={state}/>}
         </div>
       </div>
     </Context.Provider>
